@@ -19,12 +19,15 @@ for plugins. All plugins were connected using vim-plug (in the vim-plug folder).
 ### Getting Coc to work
 - update or install Nodejs (check with 'node -v')
 - use: 'sudo apt install nodejs' on linux
+- use: 'sudo pacman -S nodejs' on arch linux
 - see documentation on installing coc extensions (I use: vimlsp, tsserver, python, json, html, css, snippets)
 
 ### Getting Ranger to work
 - update or install ranger (check with 'ranger --version')
-- use: 'sudo apt install ranger' on linux
+- use: 'sudo apt install ranger' on linux\
+- use: 'sudo pacman -S ranger' on arch linux
 
 ### Getting Rg to work
 - update or install ripgrep (check with 'rg --version')
 - use: 'sudo apt-get install ripgrep' on linux
+- use: 'sudo pacman -S ripgrep' on arch linux
