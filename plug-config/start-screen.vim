@@ -9,11 +9,9 @@ let g:startify_lists = [
           \ ]
 
 
-let g:startify_bookmarks = [
-            \ { 'i': '~/.config/nvim/init.vim' },
-            \ { 'z': '~/.zshrc' },
-            \ { 'p': '~/.p10k.zsh' },
-            \ ]
+" let g:startify_bookmarks = [
+"             \ { 'i': '~/.config/nvim/init.vim' },
+"             \ ]
 
 let g:startify_custom_header = [
             \ '                                       @@@                                      ',

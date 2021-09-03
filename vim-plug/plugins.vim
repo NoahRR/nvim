@@ -17,5 +17,6 @@ Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'mhinz/vim-startify'
+Plug 'voldikss/vim-floaterm'
 
 call plug#end()

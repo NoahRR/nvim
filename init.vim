@@ -16,6 +16,7 @@ source $HOME/.config/nvim/plug-config/ranger.vim
 source $HOME/.config/nvim/plug-config/easymotion.vim
 source $HOME/.config/nvim/plug-config/nerd-tree.vim
 source $HOME/.config/nvim/plug-config/start-screen.vim
+source $HOME/.config/nvim/plug-config/float-term.vim
 "
 "
 "

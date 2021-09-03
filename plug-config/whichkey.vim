@@ -21,6 +21,22 @@ let g:which_key_map['-'] = ['<Plug>NERDCommenterToggle', 'comment']
 let g:which_key_map['r'] = ['RnvimrToggle', 'ranger']
 let g:which_key_map['n'] = ['NERDTreeToggle', 'nerd-tree']
 
+" FLOAT TERM
+
+" use CTRL-Z to exit, and 'fg' to resume - nvim is unaffacted!!
+
+" let g:which_key_map['t'] = ['FloatermNew', 'float-term']
+" let g:which_key_map['t'] = ['FloatermToggle', 'float-term']
+let g:which_key_map.t = {
+      \ 'name' : '+terminal' ,
+      \ ';' : [':FloatermNew --wintype=popup --height=6'        , 'terminal'],
+      \ 'f' : [':FloatermNew fzf'                               , 'fzf'],
+      \ 'g' : [':FloatermNew lazygit'                           , 'git'],
+      \ 'n' : [':FloatermNew node'                              , 'node'],
+      \ 'p' : [':FloatermNew python'                            , 'python'],
+      \ 't' : [':FloatermToggle'                                , 'toggle'],
+      \ }
+
 
 " folder names
 let g:which_key_map.c = {
