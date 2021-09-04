@@ -3,7 +3,13 @@ call plug#begin('~/.vim/plugged')
 
 " :PlugInstall (installs all listed Plugins) 
 
+Plug 'jacoborus/tender.vim'
 Plug 'morhetz/gruvbox'
+Plug 'tomasiser/vim-code-dark'
+Plug 'dracula/vim'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'chriskempson/base16-vim'
+
 Plug 'preservim/nerdcommenter'
 Plug 'vim-airline/vim-airline'
 Plug 'jiangmiao/auto-pairs'
