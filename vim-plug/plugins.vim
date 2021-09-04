@@ -5,12 +5,12 @@ call plug#begin('~/.vim/plugged')
 
 " color schemes
 Plug 'joshdick/onedark.vim'
-Plug 'jacoborus/tender.vim'
-Plug 'morhetz/gruvbox'
-Plug 'tomasiser/vim-code-dark'
-Plug 'dracula/vim'
-Plug 'sonph/onehalf', { 'rtp': 'vim' }
-Plug 'chriskempson/base16-vim'
+" Plug 'jacoborus/tender.vim'
+" Plug 'morhetz/gruvbox'
+" Plug 'tomasiser/vim-code-dark'
+" Plug 'dracula/vim'
+" Plug 'sonph/onehalf', { 'rtp': 'vim' }
+" Plug 'chriskempson/base16-vim'
 
 " eye candy
 Plug 'kyazdani42/nvim-web-devicons'
