@@ -45,3 +45,9 @@ sudo apt-get install lazygit
 - https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Agave.zip
 - extract, move to ~/.local/share/fonts/
 - select new font in terminal emulator / default terminal
+
+### Default background-color
+- (for onedark theme)
+- locate this file: ~/.vim/plugged/onedark.vim/autoload/onedark.vim
+- change the "background-color" line to: "background": get(s:overrides, "background", { "gui": "#1f232a", "cterm": "235", "cterm16": "NONE" }),
+- the gui color gets shared to the terminal

@@ -80,6 +80,9 @@ set guifont=Fira\ Code\ Nerd\ Font
 " :cmap - Display command-line mode maps
 " :omap - Display operator pending mode maps
 
-
-
+" fancy tabs
+set termguicolors
+lua << EOF
+require("bufferline").setup{}
+EOF
 
