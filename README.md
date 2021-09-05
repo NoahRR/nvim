@@ -24,6 +24,7 @@ for plugins. All plugins were connected using vim-plug (in the vim-plug folder).
 - use: 'sudo pacman -S nodejs' on arch linux
 - or (RECOMMENDED) install latest version of node - look up
 - see documentation on installing coc extensions (I use: vimlsp, tsserver, python, json, html, css, snippets)
+- FOR LANGUAGE SUPPORT & LINTERS :CocInstall coc-json coc-tsserver coc-html coc-pyright coc-css coc-phpls
 
 ### Ranger
 - update or install ranger (check with 'ranger --version')

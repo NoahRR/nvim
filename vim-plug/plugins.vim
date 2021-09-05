@@ -2,6 +2,7 @@
 call plug#begin('~/.vim/plugged')
 
 " :PlugInstall (installs all listed Plugins) 
+" :PlugClean (clean up any commented out plugins)
 
 " color schemes
 Plug 'joshdick/onedark.vim'
