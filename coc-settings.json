@@ -1,5 +1,7 @@
 // :CocInstall coc-json coc-tsserver coc-html coc-pyright coc-css coc-phpls
 //               json       js         html      python      css     php
+// :CocUninstall ^^
+
 {
   "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "javascript", "graphql", "html", "yaml",  "json", "python"],
 
