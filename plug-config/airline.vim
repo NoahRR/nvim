@@ -8,3 +8,4 @@ let g:airline#extensions#tabline#fnamemode = ':t'
 " SWIICH BUFFERS
 nmap <TAB> :bn<CR>
 nmap <S-TAB> :bp<CR>
+nmap <leader>b :silent! bd<CR>

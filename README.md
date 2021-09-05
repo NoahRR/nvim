@@ -6,6 +6,7 @@ nvim-wide default configurations. The plug-config folder contains all configurat
 for plugins. All plugins were connected using vim-plug (in the vim-plug folder).
 
 ## Recommended install:
+- install nvim. either via apt, other, or via snap for latest version. some plugins will only work with >v5.0
 - goto .config folder
 - git clone this repo
 - install vim-plug (see their github page)
