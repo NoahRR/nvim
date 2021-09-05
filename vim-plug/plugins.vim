@@ -38,4 +38,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'mhinz/vim-startify'
 Plug 'voldikss/vim-floaterm'
 
+" scroll bar
+Plug 'dstein64/nvim-scrollview'
+
 call plug#end()

@@ -83,6 +83,6 @@ set wrap linebreak
 
 " fancy tabs
 set termguicolors
-" lua << EOF
-" require("bufferline").setup{}
-" EOF
+lua << EOF
+require("bufferline").setup{}
+EOF
