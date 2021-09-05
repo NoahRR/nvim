@@ -37,6 +37,11 @@ let g:which_key_map.t = {
       \ 't' : [':FloatermToggle'                                , 'toggle'],
       \ }
 
+let g:which_key_map.v = {
+    \ 'name' : '+vim-sutff',
+    \ 'r' : [':source $MYVIMRC'                                 , 'reload vimrc'],
+    \ 's' : [''                                                 , ':mksession ~/mysession-date.vim'],
+    \ }
 
 " folder names
 let g:which_key_map.c = {
