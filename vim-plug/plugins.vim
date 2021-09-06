@@ -30,13 +30,15 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'preservim/nerdcommenter'
 Plug 'vim-airline/vim-airline'
 " Plug 'jiangmiao/auto-pairs'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'liuchengxu/vim-which-key'
 Plug 'kevinhwang91/rnvimr'
 Plug 'easymotion/vim-easymotion'
 Plug 'sheerun/vim-polyglot'
 Plug 'mhinz/vim-startify'
 Plug 'voldikss/vim-floaterm'
+
+" Linerts & Fixers
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " scroll bar
 Plug 'dstein64/nvim-scrollview'

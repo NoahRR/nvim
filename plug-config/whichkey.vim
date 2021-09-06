@@ -40,13 +40,14 @@ let g:which_key_map.t = {
 let g:which_key_map.v = {
     \ 'name' : '+vim-sutff',
     \ 'r' : [':source $MYVIMRC'                                 , 'reload vimrc'],
-    \ 's' : [''                                                 , ':mksession ~/mysession-date.vim'],
+    \ '1' : [''                                                 , ':mksession ~/mysession-date.vim'],
+    \ '2' : [''                                                 , "marks: m[a] 'a"],
     \ }
 
 " folder names
-let g:which_key_map.c = {
-      \ 'name' : '+coc' ,
-      \ }
+" let g:which_key_map.c = {
+"       \ 'name' : '+coc' ,
+"       \ }
 
 " FZF
 let g:which_key_map.f = {
