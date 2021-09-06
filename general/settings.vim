@@ -33,7 +33,7 @@ nnoremap <SPACE> <Nop>
 
 
 " from https://github.com/ChristianChiarulli/nvim/blob/master/general/settings.vim
-set iskeyword+=-                      	" treat dash separated words as a word text object"
+" set iskeyword+=-                      	" treat dash separated words as a word text object"
 " set formatoptions-=cro                  " Stop newline continution of comments
 
 syntax enable                           " Enables syntax highlighing
