@@ -14,5 +14,5 @@
 colorscheme onedark
 syntax on
 set t_Co=256
-set cursorline
+" set cursorline
 let g:airline_theme='onedark'

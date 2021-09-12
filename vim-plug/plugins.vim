@@ -4,14 +4,10 @@ call plug#begin('~/.vim/plugged')
 " :PlugInstall (installs all listed Plugins) 
 " :PlugClean (clean up any commented out plugins)
 
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 " color schemes
 Plug 'joshdick/onedark.vim'
-" Plug 'jacoborus/tender.vim'
-" Plug 'morhetz/gruvbox'
-" Plug 'tomasiser/vim-code-dark'
-" Plug 'dracula/vim'
-" Plug 'sonph/onehalf', { 'rtp': 'vim' }
-" Plug 'chriskempson/base16-vim'
 
 " eye candy
 Plug 'kyazdani42/nvim-web-devicons'
@@ -23,19 +19,19 @@ Plug 'junegunn/fzf.vim'
 Plug 'BurntSushi/ripgrep'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
-" Plug 'kyazdani42/nvim-web-devicons' " for file icons
-" Plug 'kyazdani42/nvim-tree.lua'
 
 " functional plugins
 Plug 'preservim/nerdcommenter'
 Plug 'vim-airline/vim-airline'
-" Plug 'jiangmiao/auto-pairs'
 Plug 'liuchengxu/vim-which-key'
 Plug 'kevinhwang91/rnvimr'
 Plug 'easymotion/vim-easymotion'
 Plug 'sheerun/vim-polyglot'
 Plug 'mhinz/vim-startify'
 Plug 'voldikss/vim-floaterm'
+
+Plug 'yamatsum/nvim-cursorline'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 " Linerts & Fixers
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
