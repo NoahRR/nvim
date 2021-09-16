@@ -12,6 +12,8 @@ Plug 'joshdick/onedark.vim'
 " eye candy
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim'
+Plug 'yamatsum/nvim-cursorline'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 " file exploring
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -30,8 +32,11 @@ Plug 'sheerun/vim-polyglot'
 Plug 'mhinz/vim-startify'
 Plug 'voldikss/vim-floaterm'
 
-Plug 'yamatsum/nvim-cursorline'
-Plug 'lukas-reineke/indent-blankline.nvim'
+" 5.0
+Plug 'AckslD/nvim-neoclip.lua'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Linerts & Fixers
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
