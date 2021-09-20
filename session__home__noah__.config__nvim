@@ -8,13 +8,12 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +129 init.vim
-badd +14 vim-plug/plugins.vim
+badd +104 init.vim
+badd +1 plug-config/telescope.vim
 argglobal
 %argdel
-set lines=55 columns=189
+edit plug-config/telescope.vim
 argglobal
-enew
 balt init.vim
 setlocal fdm=manual
 setlocal fde=0
@@ -24,7 +23,14 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-if exists(':tcd') == 2 | tcd ~/.config/nvim | endif
+silent! normal! zE
+let &fdl = &fdl
+let s:l = 54 - ((51 * winheight(0) + 26) / 52)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 54
+normal! 03|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0&& getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

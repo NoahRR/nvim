@@ -3,19 +3,21 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/.config/nvim
+cd /mnt/CEWEB9-ROOT/emerald/public_html/emerald-dev1
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +129 init.vim
-badd +14 vim-plug/plugins.vim
+badd +380 application/modules/admin/controllers/Estimates.php
+badd +23 application/modules/admin/models/Property_program_job_invoice_model.php
+badd +4 application/config/database.php
+badd +2967 application/modules/admin/controllers/Admin.php
+badd +1 application/modules/admin/controllers/Invoices.php
 argglobal
 %argdel
-set lines=55 columns=189
+edit application/modules/admin/controllers/Invoices.php
 argglobal
-enew
-balt init.vim
+balt application/config/database.php
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -24,20 +26,26 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-if exists(':tcd') == 2 | tcd ~/.config/nvim | endif
+silent! normal! zE
+let &fdl = &fdl
+let s:l = 794 - ((25 * winheight(0) + 26) / 52)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 794
+normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0&& getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
 endif
 unlet! s:wipebuf
-set winheight=1 winwidth=20 shortmess=filnxtToOFAIc
+set winheight=1 winwidth=20 shortmess=filnxtToOFAcI
 let s:sx = expand("<sfile>:p:r")."x.vim"
 if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
 set hlsearch
-nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :

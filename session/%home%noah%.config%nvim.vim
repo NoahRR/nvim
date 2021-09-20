@@ -8,14 +8,17 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +129 init.vim
-badd +14 vim-plug/plugins.vim
+badd +36 init.vim
+badd +42 vim-plug/plugins.vim
+badd +1 plug-config/dashboard.vim
+badd +1 plug-config/treesitter.vim
+badd +1 plug-config/session.vim
 argglobal
 %argdel
 set lines=55 columns=189
+edit init.vim
 argglobal
-enew
-balt init.vim
+balt vim-plug/plugins.vim
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -24,6 +27,14 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
+silent! normal! zE
+let &fdl = &fdl
+let s:l = 36 - ((35 * winheight(0) + 26) / 52)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 36
+normal! 020|
 if exists(':tcd') == 2 | tcd ~/.config/nvim | endif
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0&& getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
@@ -37,7 +48,6 @@ if filereadable(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
 set hlsearch
-nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :

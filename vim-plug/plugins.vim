@@ -9,6 +9,10 @@ call plug#begin('~/.vim/plugged')
 " color schemes
 Plug 'joshdick/onedark.vim'
 
+" startup
+Plug 'rmagatti/auto-session'
+Plug 'rmagatti/session-lens'
+
 " eye candy
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim'
@@ -29,7 +33,7 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'kevinhwang91/rnvimr'
 Plug 'easymotion/vim-easymotion'
 Plug 'sheerun/vim-polyglot'
-Plug 'mhinz/vim-startify'
+" Plug 'mhinz/vim-startify'
 Plug 'voldikss/vim-floaterm'
 
 " 5.0
@@ -37,6 +41,7 @@ Plug 'AckslD/nvim-neoclip.lua'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'glepnir/dashboard-nvim'
 
 " Linerts & Fixers
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
