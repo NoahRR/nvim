@@ -17,6 +17,7 @@ call which_key#register('<Space>', "g:which_key_map")
 
 " Single mappings
 let g:which_key_map['-'] = ['<Plug>NERDCommenterToggle', 'comment']
+let g:which_key_map['o'] = ['<Plug>NERDCommenterToggle', 'comment']
 " let g:which_key_map['/'] = ['<Plug>(easymotion-overwin-w) ', 'word-search']
 let g:which_key_map['r'] = ['RnvimrToggle', 'ranger']
 let g:which_key_map['n'] = ['NERDTreeToggle', 'nerd-tree']
