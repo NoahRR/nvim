@@ -1,4 +1,4 @@
-let g:auto_session_root_dir = '/home/noah/.config/nvim/session'
+let g:auto_session_root_dir = '/home/noahray/.config/nvim/session'
 set sessionoptions+=options,resize,winpos,terminal
 
 " or use lua
