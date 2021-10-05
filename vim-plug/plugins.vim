@@ -18,6 +18,8 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim'
 Plug 'yamatsum/nvim-cursorline'
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'itchyny/lightline.vim'
+Plug 'ap/vim-css-color'
 
 " file exploring
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -28,7 +30,7 @@ Plug 'ryanoasis/vim-devicons'
 
 " functional plugins
 Plug 'preservim/nerdcommenter'
-Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline'
 Plug 'liuchengxu/vim-which-key'
 Plug 'kevinhwang91/rnvimr'
 Plug 'easymotion/vim-easymotion'
@@ -42,6 +44,10 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'glepnir/dashboard-nvim'
+
+" COC replacment
+" Plug 'neovim/nvim-lspconfig'
+" Plug 'hrsh7th/nvim-cmp'
 
 " Linerts & Fixers
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

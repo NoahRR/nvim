@@ -4,8 +4,3 @@ let g:airline#extensions#tabline#fnamemode = ':t'
 
 " DELETE BUFFER
 " <space>q
-
-" SWIICH BUFFERS
-nmap <TAB> :bn<CR>
-nmap <S-TAB> :bp<CR>
-nmap <leader>b :silent! bd<CR>

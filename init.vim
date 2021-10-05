@@ -1,7 +1,3 @@
-" TODOS:
-" - built-in LSP . https://www.youtube.com/watch?v=NXysez2vS4Q&t=3s
-" - get neoclip to work
-
 
 "
 " LINKS TO CONFIGURATIONS
@@ -15,7 +11,7 @@ source $HOME/.config/nvim/general/key-bindings.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/whichkey.vim
 source $HOME/.config/nvim/plug-config/nerd-commenter.vim
-source $HOME/.config/nvim/plug-config/airline.vim
+" source $HOME/.config/nvim/plug-config/airline.vim
 " source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/ranger.vim
 source $HOME/.config/nvim/plug-config/easymotion.vim
@@ -26,17 +22,15 @@ source $HOME/.config/nvim/plug-config/telescope.vim
 source $HOME/.config/nvim/plug-config/dashboard.vim
 source $HOME/.config/nvim/plug-config/treesitter.vim
 source $HOME/.config/nvim/plug-config/session.vim
+source $HOME/.config/nvim/plug-config/nvim-lsp.vim
+source $HOME/.config/nvim/plug-config/lightline.vim
+
+" luafile $HOME/.config/nvim/plug-config/nvim-cmp.lua
+
 "
 "
 "
 
-" source $HOME/.config/nvim/plug-config/neoclip.vim
-" lua << EOF
-" use {
-"     "AckslD/nvim-neoclip.lua",
-"     config = function()
-"         require('neoclip').setup()
-"     end,
-" }
-" EOF
+""" TESTING BELOW
+
 

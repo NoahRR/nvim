@@ -92,3 +92,8 @@ set termguicolors
 lua << EOF
 require("bufferline").setup{}
 EOF
+
+" SWIICH BUFFERS
+nmap <TAB> :bn<CR>
+nmap <S-TAB> :bp<CR>
+nmap <leader>b :silent! bd<CR>
