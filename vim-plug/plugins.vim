@@ -1,17 +1,25 @@
+" PLUGINS TO LOOK AT
+" https://github.com/SmiteshP/nvim-gps
+" https://github.com/b3nj5m1n/kommentary
+" https://github.com/phaazon/hop.nvim
+" https://github.com/chipsenkbeil/distant.nvim
+" https://github.com/jamestthompson3/nvim-remote-containers
+" https://github.com/glepnir/indent-guides.nvim
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGS
 call plug#begin('~/.vim/plugged')
 
 " :PlugInstall (installs all listed Plugins) 
 " :PlugClean (clean up any commented out plugins)
 
-" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
 " color schemes
 Plug 'joshdick/onedark.vim'
 
 " startup
-Plug 'rmagatti/auto-session'
-Plug 'rmagatti/session-lens'
+Plug 'rmagatti/auto-session'                            " sessions per path
+" Plug 'Shatur/neovim-session-manager'                  " one session
+" Plug 'rmagatti/session-lens'                          " load session from telecope
 
 " eye candy
 Plug 'kyazdani42/nvim-web-devicons'
@@ -44,6 +52,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'glepnir/dashboard-nvim'
+Plug 'lewis6991/spellsitter.nvim'
 
 " COC replacment
 " Plug 'neovim/nvim-lspconfig'

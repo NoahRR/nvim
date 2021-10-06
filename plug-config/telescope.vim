@@ -1,11 +1,11 @@
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fr <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fo <cmd>Telescope buffers<cr>
 nnoremap <leader>f? <cmd>Telescope help_tags<cr>
 nnoremap <leader>fd <cmd>Telescope<cr>
 nnoremap <leader>fc <cmd>Telescope command_history<cr>
 nnoremap <leader>fh <cmd>Telescope oldfiles<cr>
-nnoremap <leader>fs <cmd>Telescope session-lens search_session<cr>
+" nnoremap <leader>fs <cmd>Telescope session-lens search_session<cr>
 
 lua << EOF
 require('telescope').setup{

@@ -27,6 +27,6 @@ let g:dashboard_custom_shortcut={
 
 nmap <Leader>ss :<C-u>SessionSave<CR>
 nmap <Leader>sl :<C-u>SessionLoad<CR>
-let dashboard_session_directory="~/.config/nvim/session"
+let dashboard_session_directory="~/.config/nvim/session/dashboard-session/"
 
 
