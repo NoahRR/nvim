@@ -24,10 +24,10 @@ for plugins. All plugins were connected using vim-plug (in the vim-plug folder).
 - see documentation on installing coc extensions (I use: vimlsp, tsserver, python, json, html, css, snippets)
 - FOR LANGUAGE SUPPORT & LINTERS :CocInstall coc-json coc-tsserver coc-html coc-pyright coc-css coc-phpls
 
-### Ranger (<space>r)
+### Ranger (\<space\>r)
 - update or install ranger
 
-### LazyGit (<space>tg)
+### LazyGit (\<space\>tg)
 - install lazygit
 
 ### Terminal Font
