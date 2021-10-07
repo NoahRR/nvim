@@ -1,7 +1,8 @@
 # nvim-setup
 A setup for neovim focused on asthetics and maximizing productivity
 
-![alt text](https://github.com/NoahRR/nvim/blob/master/Example-Setup.png?raw=true)
+![alt text](https://github.com/NoahRR/nvim/blob/master/screenshots/Example-Setup.png?raw=true)
+more screenshots below
 
 if confused, start with init.vim. All files are linked here. The general folder contains
 nvim-wide default configurations. The plug-config folder contains all configuration
@@ -39,3 +40,11 @@ for plugins. All plugins were connected using vim-plug (in the vim-plug folder).
 - (for onedark theme)
 - locate this file: ~/.vim/plugged/onedark.vim/autoload/onedark.vim
 - change the "background-color" line to: "background": get(s:overrides, "background", { "gui": "#1f232a", "cterm": "235", "cterm16": "NONE" }),
+
+### Galery
+![alt text](https://github.com/NoahRR/nvim/blob/master/screenshots/telescope.png?raw=true)
+![alt text](https://github.com/NoahRR/nvim/blob/master/screenshots/easymotion.png?raw=true)
+![alt text](https://github.com/NoahRR/nvim/blob/master/screenshots/nerdtree.png?raw=true)
+![alt text](https://github.com/NoahRR/nvim/blob/master/screenshots/floatterm.png?raw=true)
+![alt text](https://github.com/NoahRR/nvim/blob/master/screenshots/lazygit.png?raw=true)
+![alt text](https://github.com/NoahRR/nvim/blob/master/screenshots/ranger.png?raw=true)
