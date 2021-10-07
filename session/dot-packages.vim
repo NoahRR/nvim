@@ -3,21 +3,18 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd /mnt/CEWEB9-ROOT/emerald/public_html/emerald-dev1
+cd ~/
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +380 application/modules/admin/controllers/Estimates.php
-badd +23 application/modules/admin/models/Property_program_job_invoice_model.php
-badd +4 application/config/database.php
-badd +2967 application/modules/admin/controllers/Admin.php
-badd +1 application/modules/admin/controllers/Invoices.php
+badd +2 .dotfiles/PACKAGES.txt
 argglobal
 %argdel
-edit application/modules/admin/controllers/Invoices.php
+$argadd .dotfiles/PACKAGES.txt
+set lines=17 columns=79
+edit .dotfiles/PACKAGES.txt
 argglobal
-balt application/config/database.php
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -28,11 +25,11 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 794 - ((25 * winheight(0) + 26) / 52)
+let s:l = 18 - ((6 * winheight(0) + 7) / 14)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 794
+keepjumps 18
 normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0&& getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
@@ -46,6 +43,7 @@ if filereadable(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
 set hlsearch
+nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
