@@ -10,12 +10,10 @@ endif
 set shortmess=aoO
 badd +31 init.vim
 badd +1 vim-plug/plugins.vim
-badd +20 README.md
 argglobal
 %argdel
-edit README.md
+edit vim-plug/plugins.vim
 argglobal
-balt vim-plug/plugins.vim
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -26,11 +24,11 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 20 - ((19 * winheight(0) + 27) / 55)
+let s:l = 1 - ((0 * winheight(0) + 27) / 55)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 20
+keepjumps 1
 normal! 0
 if exists(':tcd') == 2 | tcd ~/.dotfiles/nvim/.config/nvim | endif
 tabnext 1

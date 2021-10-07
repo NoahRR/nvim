@@ -8,12 +8,14 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +1 config
+badd +51 config
+badd +5 README.md
 argglobal
 %argdel
 $argadd config
-edit config
+edit README.md
 argglobal
+balt config
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -24,12 +26,13 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 1 - ((0 * winheight(0) + 27) / 55)
+let s:l = 5 - ((4 * winheight(0) + 27) / 55)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
-normal! 0
+keepjumps 5
+normal! 0100|
+if exists(':tcd') == 2 | tcd ~/.dotfiles/archcraft-i3/.config/i3 | endif
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0&& getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
